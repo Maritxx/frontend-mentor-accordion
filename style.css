@@ -56,7 +56,7 @@ h1 {
 }
 
 .content__container {
-	margin: 25px auto;
+	margin: 0px auto 25px;
 	padding: 25px;
 }
 
@@ -73,10 +73,6 @@ h1 {
 
 .faqQuestion:hover {
 	color: var(--text-active);
-}
-
-.faqQuestion:after {
-
 }
 
 .active {
@@ -103,4 +99,26 @@ h1 {
 
 .attribution a {
 	color: hsl(228, 45%, 44%); 
+}
+
+
+
+/*Media Queries*/
+@media screen and (min-width: 375px) {
+	.faq__holder {
+		display: flex;
+	}
+
+	.image__container {
+	background-image: url("img/bg-pattern-desktop.svg");
+	background-position: left center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0px;
+	}
+
+	.image__container img {
+	margin-top: 50%;
+	width: 100%;
+}
 }
