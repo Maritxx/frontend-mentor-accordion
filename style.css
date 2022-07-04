@@ -41,22 +41,23 @@ h1 {
 }
 
 .image__container {
-	position: relative;
 	background-image: url("img/bg-pattern-mobile.svg");
 	background-position: top center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	padding: 40px;
 }
 
 .image__container img {
-	position: absolute;
-	left: 50%;
-	margin-left: -150px;
-	top: 50%;
-	margin-top: -150px;
+	margin-top: calc(-50% - 30px);
+	width: 100%;
 }
 
 .content__container {
+	margin: 25px auto;
 	padding: 25px;
-	margin: 40px auto;
 }
 
 .faqQuestion {
