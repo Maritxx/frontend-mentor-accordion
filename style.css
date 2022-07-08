@@ -60,7 +60,10 @@ h1 {
 	background-repeat: no-repeat;
 	content: ""; 
 	top: 0px;
-	left: 0px;
+    left: 10%;
+    width: 50vw;
+    height: 10vh;
+    padding: 40px;
 }
 
 .content__container {
@@ -113,7 +116,7 @@ h1 {
 
 
 /*Media Queries*/
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 481px) {
 	.faq__holder {
 		display: flex;
 	}
