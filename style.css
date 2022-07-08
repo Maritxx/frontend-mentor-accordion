@@ -96,6 +96,15 @@ h1 {
 	color: var(--text-active);
 }
 
+.faqQuestion img {
+	margin-left: auto;
+	padding: 0px 15px;
+}
+
+.faqQuestion.active img {
+	transform: rotate(180deg);
+}
+
 .active {
 	font-weight: 700;
 	color: var(--heading-active);
@@ -155,7 +164,7 @@ h1 {
 	.image__container img {
 	margin-left: -15%;
 	margin-top: unset;
-	padding: 100px 0px;
+	padding: 50px 0px;
 	}
 
 	.image__container::before {
