@@ -52,10 +52,13 @@ h1 {
 	width: 100%;
 }
 
-.image__container img:before {
+.image__container img::before {
 	background-image: url("img/bg-pattern-mobile.svg");
 	background-position: top center;
 	background-repeat: no-repeat;
+	content: ""; 
+	top: 0px;
+	left: 0px;
 }
 
 .content__container {
@@ -122,11 +125,14 @@ h1 {
 	margin-left: -10%
 	}
 
-	.image__container img:before {
+	.image__container img::before {
 	background-image: url("img/bg-pattern-desktop.svg");
 	}
 
-	.image__container img:after {
-	background-image: url("img/illustration-box-desktop.svg")
+	.image__container img::after {
+	background-image: url("img/illustration-box-desktop.svg");
+	content: ""; 
+	top: 0px;
+	left: 0px;
 	}
 }
