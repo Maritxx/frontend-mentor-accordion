@@ -9,6 +9,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	min-height: calc(100vh - 34px);
+	padding-top: 100px;
 }
 
 .nineSixty {
@@ -41,13 +42,9 @@ h1 {
 }
 
 .image__container {
-	background-image: url("img/bg-pattern-mobile.svg");
-	background-position: top center;
-	background-size: contain;
-	background-repeat: no-repeat;
 	display: flex;
-	justify-content: center;
 	padding: 40px;
+	flex: 0 1 50%;
 }
 
 .image__container img {
@@ -55,9 +52,16 @@ h1 {
 	width: 100%;
 }
 
+.image__container img:before {
+	background-image: url("img/bg-pattern-mobile.svg");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
 .content__container {
 	margin: 0px auto 25px;
 	padding: 25px;
+	flex: 0 1 50%;
 }
 
 .faqQuestion {
@@ -104,21 +108,25 @@ h1 {
 
 
 /*Media Queries*/
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 376px) {
 	.faq__holder {
 		display: flex;
 	}
 
 	.image__container {
-	background-image: url("img/bg-pattern-desktop.svg");
-	background-position: left center;
-	background-size: cover;
-	background-repeat: no-repeat;
 	padding: 0px;
 	}
 
 	.image__container img {
-	margin-top: 50%;
-	width: 100%;
-}
+	margin-top: 0px;
+	margin-left: -10%
+	}
+
+	.image__container img:before {
+	background-image: url("img/bg-pattern-desktop.svg");
+	}
+
+	.image__container img:after {
+	background-image: url("img/illustration-box-desktop.svg")
+	}
 }
