@@ -140,8 +140,8 @@ h1 {
 	background-repeat: no-repeat;
 	content: ""; 
 	position: absolute;
-	top: 40%;
-	left: -20%;
+	top: 43%;
+	left: -10%;
 	width: 50%;
 	height: 100%;
 	}
@@ -166,5 +166,9 @@ h1 {
     padding: unset;
     background-size: cover;
     margin-left: -85%;
+	}
+
+	h1 {
+		text-align: left;
 	}
 }
