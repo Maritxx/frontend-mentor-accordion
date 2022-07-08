@@ -97,7 +97,7 @@ h1 {
 }
 
 .faqQuestion img {
-	margin-left: auto;
+	float: right;
 	padding: 0px 15px;
 }
 
@@ -179,5 +179,10 @@ h1 {
 
 	h1 {
 		text-align: left;
+	}
+
+	.content__container {
+	padding-right: 50px;
+	padding-top: 25px;
 	}
 }
